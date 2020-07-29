@@ -1,0 +1,294 @@
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+header {
+    background-color: pink;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 5px 10px;
+    transition: 0.4s;
+    position: fixed;
+    width: 70%;
+    top: 0;
+    z-index: 99;
+}
+
+.row {
+    margin-top: 75px;
+    padding: 15px 15px;
+
+}
+
+/* Style the logo */
+#navbar #logo {
+    font-size: 72px;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.btn {
+    background-color: rgba(251, 119, 190, 0.746);
+}
+
+body {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: sans-serif, verdana;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    height: 100%;
+}
+
+/* Background editing */
+body {
+    background: linear-gradient(-45deg, white, pink, beige, pink);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* End of background editing */
+
+li {
+    display: inline-table;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    vertical-align: center;
+}
+
+li a:hover {
+    background-color: rgba(150, 148, 148, 0.87);
+    border-radius: 5px;
+}
+
+
+.shadow {
+    filter: saturate(50%);
+}
+
+
+h1 {
+    font-style: italic;
+    font-family: "curls mt";
+    font-size: 86px;
+    text-align: right;
+    color: pink;
+}
+
+h2 {
+    text-align: center;
+    text-shadow: white 8px 8px 8px;
+    font-style: italic;
+}
+
+h4 {
+    color: white;
+    font-size: 18px;
+    text-align: right;
+    font-style: italic;
+    padding-bottom: 1.2em;
+    padding-right: 5px;
+}
+
+.container {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: pink;
+    border-style: dotted;
+    border-width: 15px;
+    border-color: white;
+    border-radius: 25px;
+}
+
+.table {
+    background-color: pink;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+    padding-left: 0.4em;
+    justify-content: space-evenly;
+}
+
+.shopCart {
+    color: black;
+    font-weight: bold;
+}
+
+.cartBtn {
+    color: black;
+    font-size: 10px;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    padding: 1px;
+    margin: 3px;
+}
+
+#imgCart {
+    width: 25px;
+    height: 25px;
+}
+
+.col-8 {
+    padding-top: 2em;
+    background-color: pink;
+}
+
+p {
+    font-size: 15px;
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+}
+
+.table1 {
+    background-color: pink;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+    padding-left: 3.7em;
+    align-items: center;
+    padding-bottom: 1em;
+}
+
+.zoom {
+    transition: transform .2s;
+    /* Animation */
+    width: 200px;
+    height: 280px;
+    margin: auto;
+    align-items: stretch;
+    border-radius: 20px;
+    padding: 1em;
+    float: left;
+}
+
+.zoom:hover {
+    transform: scale(1.5);
+    /* (150% zoom) */
+}
+
+.container,
+.table1 {
+    animation: transitionIn 0.75s;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+body 
+{
+  font-family: sans-serif;
+}
+.image-hover-text-container 
+{
+  position: relative;
+  display: inline-block;
+
+  width: auto;
+  height: auto;
+  transition: all 0.2s linear;
+}
+
+.image-hover-image 
+{
+ display: block;
+}
+/* Make the image round */
+.image-hover-image img
+{
+  border-radius: 50%;
+
+  height: 200px;
+}
+
+
+
+.image-hover-text 
+{
+  position: absolute;
+  top: 0;
+  width: 100%;  
+  height: 100%;
+  margin: 0 auto;
+  opacity: 0;
+  cursor: default;
+  transition: opacity 0.2s linear;
+}
+.image-hover-text:hover 
+{
+  opacity: 1;
+}
+
+
+.image-hover-text-bubble 
+{
+  position: relative;
+  box-sizing: border-box;
+  top: 0; left: 0; right: 100%;
+  height: 200px;
+  text-align: center;
+  background: rgba(218, 211, 211, 0.9);
+  border: 1px solid #848484;
+  border-radius: 50%;
+  margin: 0 auto;
+  padding: 20% 8px 5px 8px;
+  overflow: hidden;
+  font-size: 17px;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.image-hover-text .image-hover-text-title
+{
+  font-size: 20px;
+  display: block;
+}

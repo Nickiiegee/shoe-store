@@ -1,0 +1,320 @@
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+
+}
+
+header {
+    background-color: lightpink;
+}
+
+/* style the navbar */
+#navbar {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 5px 10px;
+    transition: 0.4s;
+    position: fixed;
+    width: 70%;
+    top: 0;
+    z-index: 99;
+}
+
+/* Style the logo */
+#navbar #logo {
+    font-size: 72px;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+body {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: sans-serif, verdana;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: beige;
+    height: 100%;
+}
+
+/* background animation */
+body {
+    background: linear-gradient(-45deg, white, pink, beige, pink);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* end of background animation */
+
+li {
+    display: inline-table;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    vertical-align: center;
+}
+
+div a {
+    text-decoration: none;
+    color: darkred;
+    border-color: grey;
+    padding: 5px;
+    vertical-align: all;
+}
+
+
+li a:hover {
+    background-color: rgba(150, 148, 148, 0.87);
+    border-radius: 5px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+caption {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    color: #6c757d;
+    text-align: left;
+    caption-side: bottom;
+}
+
+h1 {
+    font-style: italic;
+    font-family: "curls mt";
+    font-size: 86px;
+    text-align: right;
+    color: pink;
+}
+
+
+h3 {
+    text-align: center;
+}
+
+h4 {
+    color: white;
+    font-size: 18px;
+    text-align: right;
+    font-style: italic;
+    padding-bottom: 1.2em;
+    padding-right: 5px;
+}
+
+.navbar-brand:link {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.navbar-brand:hover {
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: pink;
+}
+
+.col-8 {
+    padding-top: 2em;
+}
+
+
+p {
+    font-size: 15px;
+}
+
+.row {
+    text-align: center;
+    border-style: groove;
+    border-color: white;
+    border-width: 2px;
+    height: 300px;
+}
+
+.col-md-2 {
+    border-left: groove white;
+    padding-top: 20px;
+    text-decoration-line: underline;
+    justify-content: space-evenly;
+}
+
+.col-lg-2 {
+    padding-top: 100px;
+    border-right: dotted;
+    border-color: white;
+    border-width: 2px;
+    font-style: italic;
+}
+
+.cartBtn {
+    width: 20px;
+    height: 20px;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    margin: 3px;
+}
+
+.cartBtn img {
+    width: 15px;
+    height: 15px;
+}
+
+#imgCart {
+    width: 25px;
+    height: 25px;
+}
+
+.moreButton:link {
+    color: darkred;
+    background-color: pink;
+    border: double white;
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 2px;
+    margin: 3px;
+}
+
+.moreButton:hover {
+    color: white;
+    background-color: darkred;
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+}
+
+.table-light {
+    background: lightpink;
+}
+
+body {
+    padding-top: 80px;
+}
+
+.show-cart li {
+    display: flex;
+}
+
+.card {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.card-img-top {
+    width: 200px;
+    height: 200px;
+    align-self: center;
+}
+
+
+.container1 {
+    width: 100%;
+    height: 112rem;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: pink;
+    border-color: white;
+    border-style: double;
+    border-radius: 10px;
+}
+
+.btn {
+    background-color: rgba(251, 119, 190, 0.746);
+}
+
+.add-to-cart {
+    right: 2px;
+    bottom: 2px;
+    position: absolute;
+    font-size: 10px;
+    border-color: white;
+}
+
+.box {
+    background-color: pink;
+    padding: 25px;
+    border-color: white;
+    border-style: double;
+    border-width: 5px;
+    text-align: center;
+}
+
+.vat {
+    font-size: 8px;
+}
+
+.card-title {
+    font-size: 24px;
+    color: black;
+    text-align: center;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+.container1,
+.box {
+    animation: transitionIn 0.75s;
+}
